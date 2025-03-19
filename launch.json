@@ -1,0 +1,161 @@
+{
+
+    "configurations": [
+
+        {
+
+            "name": "Manager",
+
+            "type": "python",
+
+            "request": "launch",
+
+            "program": "manager/manager.py",
+
+            "console": "integratedTerminal",
+
+            "justMyCode": true,
+
+            "args": ["config.ini"]
+
+        },
+
+        {
+
+            "name": "App",
+
+            "type": "python",
+
+            "request": "launch",
+
+            "program": "app/app.py",
+
+            "console": "integratedTerminal",
+
+            "justMyCode": true,
+
+            "args": ["config.ini"]
+
+        },
+
+        {
+
+            "name": "Updater",
+
+            "type": "python",
+
+            "request": "launch",
+
+            "program": "updater/updater.py",
+
+            "console": "integratedTerminal",
+
+            "justMyCode": true,
+
+            "args": ["config.ini"]
+
+        },
+
+        {
+
+            "name": "Monitor",
+
+            "type": "python",
+
+            "request": "launch",
+
+            "program": "monitor/monitor.py",
+
+            "console": "integratedTerminal",
+
+            "justMyCode": true,
+
+            "args": ["config.ini"]
+
+        },
+
+        {
+
+            "name": "Storage",
+
+            "type": "python",
+
+            "request": "launch",
+
+            "program": "storage/storage.py",
+
+            "console": "integratedTerminal",
+
+            "justMyCode": true,
+
+            "args": ["config.ini"]
+
+        },
+
+        {
+
+            "name": "Verifier",
+
+            "type": "python",
+
+            "request": "launch",
+
+            "program": "verifier/verifier.py",
+
+            "console": "integratedTerminal",
+
+            "justMyCode": true,
+
+            "args": ["config.ini"]
+
+        },        
+
+        {
+
+            "name": "Python: Current File",
+
+            "type": "python",
+
+            "request": "launch",
+
+            "program": "${file}",
+
+            "console": "integratedTerminal",
+
+            "justMyCode": true
+
+        },
+
+        {
+
+            "name": "Docker: Python - General",
+
+            "type": "docker",
+
+            "request": "launch",
+
+            "preLaunchTask": "docker-run: debug",
+
+            "python": {
+
+                "pathMappings": [
+
+                    {
+
+                        "localRoot": "${workspaceFolder}",
+
+                        "remoteRoot": "/app"
+
+                    }
+
+                ],
+
+                "projectType": "general"
+
+            }
+
+        }
+
+    ]
+
+}
